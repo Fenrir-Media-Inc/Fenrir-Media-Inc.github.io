@@ -1,0 +1,275 @@
+:root {
+    --main-bg-color: black;
+    --text-color: white;
+    --grey-text-color: #787878;
+    --light-grey-text-color: #C5C5C5;
+    --hover-color: #2D51F0;
+    --cta-button-color: #0076FF;
+    --red-accent-color: #D34645;
+    --yellow-accent-color: #EDC253;
+    --blue-accent-color: #364DF8;
+    --grey-accent-color: #A8A8A8;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: "SF Pro Display", Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    transition: color 0.1s ease-out;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.thin {
+    font-weight: lighter;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+#hero-container {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#hero-container h1 {
+    font-size: 2.5rem;
+    mix-blend-mode: difference;
+}
+
+#hero-container .sub-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+.video-player .shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px -62px 90px 0px #000000;
+    box-shadow: inset 0px -62px 90px 0px #000000;
+    top: 0;
+    left: 0;
+}
+
+#hero-container video {
+    width: 100%;
+    height: auto;
+}
+
+#video-overlay {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    mix-blend-mode: difference;
+    gap: 1rem;
+}
+
+#hero-container #cta {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+#cta h2 {
+    font-size: 3rem;
+}
+
+#cta button {
+    background: var(--cta-button-color);
+    outline: none;
+    border: none;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease-out;
+}
+
+#cta button:hover {
+    background-color: var(--hover-color);
+}
+
+.sub-container {
+    width: max(1080px, 70%);
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 4rem;
+}
+
+/* Services section */
+#services {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: stretch;
+    place-content: stretch;
+    gap: 2rem;
+}
+
+#film-service {
+    grid-column: 1 / span 2;
+    flex-direction: row;
+}
+
+#film-service img {
+    width: 65%;
+}
+
+.service {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    background: #121212;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.service p {
+    font-size: 2rem;
+}
+
+.service-description {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+#film-service h3 {
+    color: var(--red-accent-color);
+}
+
+#marketing-service h3 {
+    color: var(--blue-accent-color);
+}
+
+#design-service h3 {
+    color: var(--yellow-accent-color);
+}
+
+#eqipment h3 {
+    color: var(--grey-accent-color);
+}
+
+#equipment .service-description {
+    background-color: var(--main-bg-color);
+}
+
+footer {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+}
+
+#links {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+#links ul {
+    display: flex;
+    flex-flow: column nowrap;
+    place-content: flex-start;
+    color: var(--grey-text-color);
+}
+
+#links li:first-of-type {
+    color: var(--text-color);
+    padding-bottom: 0.3rem;
+}
+
+#site-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+     color: var(--grey-text-color);
+    font-size: 0.65rem;
+    padding-bottom: 1rem;
+}
+
+#site-footer .ligher {
+    color: var(--light-grey-text-color); 
+}
+
+#footer-links {
+    display: flex;
+     flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0.5rem;
+}
+
+#copyright {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
