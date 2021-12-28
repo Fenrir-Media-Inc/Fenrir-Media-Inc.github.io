@@ -107,6 +107,18 @@ header {
     margin-top: 1rem;
 }
 
+header #logo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+header img {
+    width: 70px ;
+    mix-blend-mode: difference;
+}
+
 header nav {
     display: flex;
     flex-flow: row nowrap;
