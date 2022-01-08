@@ -180,6 +180,7 @@ header nav {
 
 #film-service img {
     width: 65%;
+    object-fit: cover;
 }
 
 .service {
